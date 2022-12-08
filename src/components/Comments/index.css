@@ -1,0 +1,82 @@
+/* Write your CSS here */
+.bg_container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container {
+  width: 60%;
+  height: 70vh;
+  padding: 20px;
+}
+.form_container {
+  width: 50%;
+}
+
+.comment_and_image_Container {
+  display: flex;
+  justify-content: space-between;
+}
+.comment_section {
+  height: 150px;
+  border-radius: 10px;
+}
+.inputName {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid;
+}
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.image {
+  width: 75%;
+}
+.hr_color {
+  background-color: #dee0e3;
+}
+.count_container {
+  display: flex;
+  font-size: 20px;
+}
+.count_division {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .bg_container {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+  .main_container {
+    width: 80vw;
+  }
+  .comment_and_image_Container {
+    flex-direction: column;
+  }
+  .form_container {
+    width: 100%;
+    order: 2;
+  }
+  .image_container {
+    order: 1;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+  }
+}
